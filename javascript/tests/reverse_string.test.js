@@ -1,4 +1,4 @@
-const reverseString = require('../reverse_string');
+const reverseString = require('..');
 
 test("can handle an empty string", () => {
   expect(reverseString("")).toBe("");
@@ -18,4 +18,8 @@ test("can handle three characters", () => {
 
 test("can handle many characters", () => {
   expect(reverseString("sham-meow")).toBe("sham-meow".split("").reverse().join(""));
+});
+
+test("can handle space in string", () => {
+  expect(reverseString("get going")).toBe("gniog teg");
 });
