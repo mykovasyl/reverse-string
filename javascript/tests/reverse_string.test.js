@@ -19,3 +19,7 @@ test("can handle three characters", () => {
 test("can handle many characters", () => {
   expect(reverseString("sham-meow")).toBe("sham-meow".split("").reverse().join(""));
 });
+
+test("can handle space in string", () => {
+  expect(reverseString("get going")).toBe("gniog teg");
+});
